@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <title>Carousel</title>
+
+</head>
+<body class="grey darken-4">
+    <nav class="lime">
+        <a href="" class="brand-logo">Carousel</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="grey-text text-lighten-3">Carousel Slider</h1>
+        <div class="carousel">
+            <a class="carousel-item">
+                <img src="download.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="CODERED_B1_landscape_P2d_714x348.jpg.img.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="sunset-hiking-like-ants-marching.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="istockphoto-583809524-612x612.jpg" alt="">
+            </a>
+        </div>
+        <div class="container">
+          <h1 class="brown-text text-darken-3">Tote Bags</h1>
+          <div class="carousel">
+            <a class="carousel-item">
+              <img src="254165059_255711769860587_2008836866089497557_n.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+              <img src="277522301_339608158137614_346052281187019368_n.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+              <img src="278056731_343152904449806_8598519530651985750_n.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+              <img src="278081241_343151117783318_6575146114925440531_n.jpg" alt="">
+            </a>
+          </div>
+        <h1 class="grey-text text-lighten-3">Full Width Slider</h1>
+        <div class="carousel carousel-slider">
+            <a class="carousel-item">
+                <img src="download.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="CODERED_B1_landscape_P2d_714x348.jpg.img.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="sunset-hiking-like-ants-marching.jpg" alt="">
+            </a>
+            <a class="carousel-item">
+                <img src="istockphoto-583809524-612x612.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!--Special Options-->
+    <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+          <a class="btn waves-effect white grey-text darken-text-2">button</a>
+        </div>
+        <div class="carousel-item light blue white-text" href="#one!">
+          <h2>First Panel</h2>
+          <p class="white-text">This is your first panel</p>
+        </div>
+        <div class="carousel-item orange white-text" href="#two!">
+          <h2>Second Panel</h2>
+          <p class="white-text">This is your second panel</p>
+        </div>
+        <div class="carousel-item yellow white-text" href="#three!">
+          <h2>Third Panel</h2>
+          <p class="white-text">This is your third panel</p>
+        </div>
+        <div class="carousel-item purple white-text" href="#four!">
+          <h2>Fourth Panel</h2>
+          <p class="white-text">This is your fourth panel</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+            <h1 class="grey-text text-lighten-3">COLLAPSIBLE</h1>
+           <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">account_circle</i>About Me</div>
+              <div class="collapsible-body white-text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque soluta facilis explicabo repellat vero adipisci, saepe quo repellendus similique minus unde voluptas cum, enim, inventore asperiores veniam quod harum!</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">favorite</i>Favorites</div>
+              <div class="collapsible-body white-text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque soluta facilis explicabo repellat vero adipisci, saepe quo repellendus similique minus unde voluptas cum, enim, inventore asperiores veniam quod harum!</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">person_add</i>Follow Me</div>
+              <div class="collapsible-body white-text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis atque soluta facilis explicabo repellat vero adipisci, saepe quo repellendus similique minus unde voluptas cum, enim, inventore asperiores veniam quod harum!</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div style="height: 500px"></div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                duration: 1000,
+                dist: 10,
+                shift: 10,
+                padding: 10,
+                numVisible: 5,
+                indicators: true,
+                noWrap: false
+            });
+        });
+        // Full Width Slider
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: false,
+            duration: 1000,
+            indicators: true
+            
+        });
+
+    $('.collapsible').collapsible({
+        inDuration: 1000,
+        outDuration: 1000,
+        accordion: false
+    });
+    </script>
+</body>
+</html>

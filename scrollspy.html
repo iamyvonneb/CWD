@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ScrollSpy</title>
+</head>
+<body class="black">
+        <div class="navbar-fixed">
+            <nav class="blue-grey darken-4">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo white-text">CWD Training</a>
+                        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="table-of-contents right hide-on-med-and-down">
+                            <li>
+                                <a href="#introduction">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#structure">Structure</a>
+                            </li>
+                            <li>
+                                <a href="#initialization">Initialization</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--Sidenav structure-->
+        <ul id="slide-out" class="sidenav blue-grey">
+            <ul class="table-of-contents">
+                            <li>
+                                <a href="#introduction">Introduction</a>
+                            </li>
+                            <li>
+                                <a href="#structure">Structure</a>
+                            </li>
+                            <li>
+                                <a href="#initialization">Initialization</a>
+                            </li>
+                        </ul>
+        </ul>
+   
+        <div class="row">
+        <div class="col s12 m9 l10">
+            <div class="container">
+                <h2 class="grey-text text-lighten-1">ScrollSpy</h2>
+                <!--Introduction-->
+                <div id="introduction" class="section scrollspy">
+                    <h4 class="grey-text text-lighten-1">Introduction</h4>
+                    <p class="grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet eaque voluptatem neque qui quae consequatur aliquid rerum est nisi eos repellat quos, quasi accusantium pariatur inventore culpa cum tempora illo veniam vitae, laborum doloremque? Quibusdam laborum illum doloribus, nemo sit laudantium neque ipsum ex cumque eius corporis sunt eveniet maxime qui debitis ducimus, veritatis mollitia. Id inventore explicabo expedita ipsam alias, qui eligendi facere molestias nesciunt, vel similique nemo nam atque! Excepturi ut molestias doloremque ullam, qui fugit blanditiis exercitationem suscipit asperiores aliquid commodi odit illum, esse iure deleniti vel cum quae reiciendis quidem id consequatur tempora magnam maxime. </p>
+                  </div>
+            
+                  <div id="structure" class="section scrollspy">
+                    <h4 class="grey-text text-lighten-1">Structure</h4>
+                    <p class="grey-text text-lighten-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia architecto eius exercitationem? Iure ipsam pariatur, eos, assumenda dolore sapiente rerum illum vitae molestias sequi eligendi similique voluptas incidunt autem totam magni enim animi, aliquid temporibus. Id maxime ullam enim aliquid voluptates atque porro facere maiores quaerat iste, deserunt quisquam dolore. Laboriosam nihil cum facilis veritatis ad quidem, numquam commodi similique ducimus nisi repellendus id nobis veniam iste, dicta eius praesentium harum magnam odio enim at, distinctio minima. Nihil dolorum culpa fugiat possimus mollitia deleniti saepe! Accusantium voluptate ex officiis iusto, neque necessitatibus architecto facere earum cum! Voluptas numquam magnam corrupti.</p>
+                  </div>
+            
+                  <div id="initialization" class="section scrollspy">
+                    <h4 class="grey-text text-lighten-1">Initialization</h4>
+                    <p class="grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum at earum, porro nulla, sunt voluptate amet sit soluta est, vel provident? Quae blanditiis velit, ipsam expedita soluta exercitationem possimus totam vel placeat qui sapiente sunt sint eos quidem cum praesentium dolore hic dolorem earum ullam voluptatum unde magni voluptate veritatis. Fugiat non, minima, rerum nemo voluptas aperiam consequatur repellat officia enim rem nostrum aliquid. Voluptatem, ducimus ut iusto quisquam est hic maiores recusandae pariatur esse repellendus in aliquam omnis velit adipisci possimus impedit ullam reprehenderit nobis optio illum suscipit sunt veritatis voluptatibus odit. Molestiae earum officiis vel cum fugit deserunt!</p>
+                  </div>
+            </div>
+        </div>
+    
+    
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+      $(document).ready(function(){
+    $('.scrollspy').scrollSpy({
+        throttle: 1000,
+        scrollOffset: 200
+    });
+  });
+  // SideNav Init
+  $('.sidenav').sidenav({
+    edge: 'right'
+  });
+
+</script>
+</body>
+</html>
